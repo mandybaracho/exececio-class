@@ -1,0 +1,31 @@
+[16:32, 18/04/2024] reynald: class Veiculo:
+    def _init_(self, marca, modelo):
+        self.marca = marca
+        self.modelo = modelo
+    
+    def acelerar(self):
+        print("Acelerando...")
+    
+    def checar(self):
+        print("Verificando...")
+
+class Carro(Veiculo):
+    def abrir_porta(self):
+        print("Abrindo a porta do carro...")
+
+class Moto(Veiculo):
+    def empinar(self):
+        print("Empinando a moto...")
+
+# Exemplo de uso
+carro1 = Carro("Ford", "Fiesta")
+carro1.acelerar()
+carro1.abrir_porta()
+
+moto1 = Moto("Honda", "CBR")
+moto1.checar()
+moto1.empinar()
+[16:33, 18/04/2024] mandy: 1Corian Classe Veiculo
+
+Atributo: MARCA, Modelo
+
