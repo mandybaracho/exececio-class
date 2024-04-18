@@ -25,6 +25,10 @@ class Carro(Veiculo):
         self.portas_abertas += num_portas
         print(f"{num_portas} porta(s) aberta(s). Atualmente, {self.portas_abertas} porta(s) estão abertas.")
 
+    def fechar_porta(self, num_portas=1):
+        self.portas_abertas -= num_portas
+        print(f"{num_portas} porta(s) fechada(s). Atualmente, {self.portas_abertas} porta(s) estão abertas.")
+
 
 class Moto(Veiculo):
     def empinar(self, angulo):
@@ -38,6 +42,7 @@ carro.acelerar(50)
 carro.acelerar(20)
 carro.freiar(30)
 carro.abrir_porta(2)
+carro.fechar_porta(2)
 
 moto = Moto()
 moto.empinar(45)
